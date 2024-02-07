@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After school Club</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+</head>
+<body>
+    
+
+<template>
+    <div id="app">
+      <LessonInfo :lesson="lessonData" />
+    </div>
+  </template>
+  
+  <script>
+  import LessonInfo from "@/components/LessonInfo.vue";
+  
+  export default {
+    name: "App",
+    components: {
+      LessonInfo,
+    },
+    data() {
+      return {
+        lessonData: {
+          subject: "Mathematics",
+          location: "London",
+          price: "100",
+          image: "https://example.com/lesson-image.jpg",
+        },
+      };
+    },
+  };
+  </script>
+  
+  <style>
+  
+  </style>
+  
+        </script>
+</body>
+</html>
